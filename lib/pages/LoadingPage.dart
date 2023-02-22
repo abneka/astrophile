@@ -11,7 +11,7 @@ class _LoadingPageState extends State<LoadingPage> {
     print("started");
     FetchData instance = FetchData();
     await instance
-        .getAPOTD("2020-11-13" /*DateTime.now().toString().substring(0, 10)*/);
+        .getAPOTD(DateTime.now().toString().substring(0, 10));
     print("got");
     Map instanceData = instance.instanceData;
     Navigator.pushReplacementNamed(context, "home",
@@ -50,7 +50,7 @@ class _LoadingPageState extends State<LoadingPage> {
               ),
               SizedBox(height: 130.0),
               Text(
-                "Made By Dream Intelligence \nNov 2020GC",
+                "Made By BByte Tech. \nFeb 2023GC",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.grey[900],
